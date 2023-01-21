@@ -4,20 +4,48 @@
  */
 
 .heroBanner {
-  padding: 4rem 0;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
+	padding: 4rem 0;
+	text-align: center;
+	position: relative;
+	overflow: hidden;
 }
 
 @media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 2rem;
-  }
+	.heroBanner {
+		padding: 2rem;
+	}
 }
 
 .buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 1rem;
+	gap: 1rem;
+}
+
+.buttons * {
+	font-size: 1em !important;
+}
+
+.logo {
+	max-width: 125px;
+}
+
+.card {
+	margin-top: 2.5rem;
+	max-width: 575px;
+	margin-inline: auto;
+	text-align: left;
+	padding: 1rem;
+	background-color: hsl(220, 35%, 97%);
+	border-radius: 1rem;
+}
+
+[data-theme='dark'] .card {
+	background-color: hsl(220, 8%, 22%);
+}
+
+[data-theme='dark'] .button--primary {
+	color: white !important;
 }
