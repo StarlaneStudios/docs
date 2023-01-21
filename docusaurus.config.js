@@ -45,16 +45,15 @@ const config = {
 				},
 				items: [
 					{
-						type: 'doc',
-						docId: 'cirql',
-						position: 'left',
+						to: 'docs/guide',
 						label: 'Guide',
+						position: 'left'
 					},
 					{
-						type: 'doc',
-						docId: 'api/index',
-						position: 'left',
+						to: 'docs/api',
 						label: 'API Reference',
+						position: 'left',
+						activeBasePath: 'docs/api'
 					},
 					{
 						href: 'https://github.com/StarlaneStudios/cirql/blob/main/CHANGELOG.md',
