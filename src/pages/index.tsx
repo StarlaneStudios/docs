@@ -40,12 +40,11 @@ function HomepageHeader() {
 }
 
 export default function Home(): JSX.Element {
-	const { siteConfig } = useDocusaurusContext();
-
 	return (
 		<Layout
-			title={`Hello from ${siteConfig.title}`}
-			description="Description will go into a meta tag in <head />">
+			title="SurrealDB ORM & Query Builder"
+			description="Cirql is a simple and lightweight ORM and query builder for SurrealDB with built in model mapping and validation powered by Zod"
+		>
 			<HomepageHeader />
 		</Layout>
 	);
