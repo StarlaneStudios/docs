@@ -25,10 +25,9 @@ The above example will send a raw string query to the database and return the re
 Writing raw query strings is tedious and error prone. Cirql provides a Query Writer API to help you write queries in a more structured way.
 
 ```ts
-import { select } from 'cirql';
+import { select, RecordSchema } from 'cirql';
 
-export const Organisation = z.object({
-    id: z.string(),
+export const Organisation = RecordSchema.extend({
     name: z.string().min(1),
     isEnabled: z.boolean(),
     createdAt: z.string()
@@ -48,18 +47,21 @@ In the above example we are using the `select` function to create a query writer
 The above example also makes use of a [Zod](https://github.com/colinhacks/zod) schema to validate the query result. This schema is used to infer the TypeScript typing of the result. This means that you can use the result as if it was typed as `Organisation[]`. The schema property is required for all queries, however you can set it to `z.any()` to disable validation.
 
 ### Available Query Writers
-TODO - Link to individual pages<br/>
 We currently provide the following query writers:
 - `select()`
 - `count()`
+- `countRecord()`
+- `countRelation()`
 - `del()`
 - `delRecord()`
+- `delRelation()`
 - `create()`
 - `createRecord()`
 - `update()`
 - `updateRecord()`
+- `updateRelation()`
 - `relate()`
-- `relateRecords()`
+- `relateRelation()`
 - `letValue()`
 - `query()`
 
