@@ -71,11 +71,13 @@ While the Query Writer API provides a safe way to write queries, it is still pos
 In the following example we are creating a new organisation, and setting the `createdAt` field to the current time using the Surreal `time::now()` function.
 
 ```ts
+import { time } from 'cirql'
+
 const profile = await cirql.execute({ 
     query: create('organisation').setAll({
         name: 'Example',
         isEnabled: eq('$enable'),
-        createdAt: eq(timeNow()) // time::now()
+        createdAt: eq(time.now()) // time::now()
     }),
     schema: Organisation,
     params: {
@@ -85,6 +87,12 @@ const profile = await cirql.execute({
 ```
 
 When adding or subtracting items from arrays, you can use the `add` and `remove` functions instead of eq for inserting `+=` and `-=` operators.
+
+### Available raw functions
+We currently provide access to following raw functions:
+- [rand](https://surrealdb.com/docs/surrealql/functions/rand)
+- [time](https://surrealdb.com/docs/surrealql/functions/time)
+- [type](https://surrealdb.com/docs/surrealql/functions/type)
 
 ## Batched queries & transactions
 While you can use `.execute()` to send a single query to SurrealDB, you can also use `.batch()` and `.transaction()` to send multiple queries in a single request.
