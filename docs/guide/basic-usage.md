@@ -88,6 +88,12 @@ const profile = await cirql.execute({
 
 When adding or subtracting items from arrays, you can use the `add` and `remove` functions instead of eq for inserting `+=` and `-=` operators.
 
+### Available raw functions
+We currently provide access to following raw functions:
+- [type](https://surrealdb.com/docs/surrealql/functions/type)
+- [time](https://surrealdb.com/docs/surrealql/functions/time)
+- [rand](https://surrealdb.com/docs/surrealql/functions/rand)
+
 ## Batched queries & transactions
 While you can use `.execute()` to send a single query to SurrealDB, you can also use `.batch()` and `.transaction()` to send multiple queries in a single request.
 
