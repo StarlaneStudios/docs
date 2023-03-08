@@ -71,11 +71,13 @@ While the Query Writer API provides a safe way to write queries, it is still pos
 In the following example we are creating a new organisation, and setting the `createdAt` field to the current time using the Surreal `time::now()` function.
 
 ```ts
+import { time } from 'cirql'
+
 const profile = await cirql.execute({ 
     query: create('organisation').setAll({
         name: 'Example',
         isEnabled: eq('$enable'),
-        createdAt: eq(timeNow()) // time::now()
+        createdAt: eq(time.now()) // time::now()
     }),
     schema: Organisation,
     params: {
