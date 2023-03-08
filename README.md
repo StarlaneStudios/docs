@@ -1,6 +1,8 @@
-# Website
+# Cirql documentation
 
-This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+This repository houses the documentation website source for [Cirql](https://github.com/StarlaneStudios/cirql), powered by [Docusaurus 2](https://docusaurus.io/).
+
+## Getting started
 
 ### Installation
 
@@ -24,18 +26,11 @@ $ yarn build
 
 This command generates static content into the `build` directory and can be served using any static contents hosting service.
 
-### Deployment
+## Contributing
 
-Using SSH:
+Maintaining documentation is hard, especially for a small team like ours. Contributions to our documentation are always welcome. If you see something that could be improved, please open an issue or submit a pull request.
 
-```
-$ USE_SSH=true yarn deploy
-```
+This repository follows the same [Contributor Guide](https://github.com/StarlaneStudios/cirql/blob/main/CONTRIBUTING.md) as the main repository.
 
-Not using SSH:
 
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+Copyright (c) 2023, Starlane Studios
