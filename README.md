@@ -7,13 +7,13 @@ This repository houses the documentation website source for [Cirql](https://gith
 ### Installation
 
 ```
-$ yarn
+$ pnpm install
 ```
 
 ### Local Development
 
 ```
-$ yarn start
+$ pnpm start
 ```
 
 This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
@@ -21,7 +21,7 @@ This command starts a local development server and opens up a browser window. Mo
 ### Build
 
 ```
-$ yarn build
+$ pnpm build
 ```
 
 This command generates static content into the `build` directory and can be served using any static contents hosting service.
@@ -32,5 +32,7 @@ Maintaining documentation is hard, especially for a small team like ours. Contri
 
 This repository follows the same [Contributor Guide](https://github.com/StarlaneStudios/cirql/blob/main/CONTRIBUTING.md) as the main repository.
 
+### Requirements
+- [PNPM](https://pnpm.io/) (npm i -g pnpm)
 
 Copyright (c) 2023, Starlane Studios
