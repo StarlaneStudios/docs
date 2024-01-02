@@ -14,23 +14,23 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Code checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Setup node
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v4
         with:
           node-version: 18
       
       - name: Frontend dependencies
         run: |
           npm i -g pnpm
-          pnpm install
+          pnpm install --no-frozen-lockfile
 
       - name: Build application
         run: pnpm build
 
       - name: Upload web app
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v3
         with:
           path: ./build
   release:
@@ -40,4 +40,4 @@ jobs:
       - package
     steps:
       - name: Publish web app
-        uses: actions/deploy-pages@v1
+        uses: actions/deploy-pages@v4
