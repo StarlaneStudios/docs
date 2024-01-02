@@ -35,4 +35,4 @@ This repository follows the same [Contributor Guide](https://github.com/Starlane
 ### Requirements
 - [PNPM](https://pnpm.io/) (npm i -g pnpm)
 
-Copyright (c) 2023, Starlane Studios
+Copyright (c) 2024, Starlane Studios

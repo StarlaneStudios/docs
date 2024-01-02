@@ -9,9 +9,9 @@ By default Cirql will connect to SurrealDB using stateful WebSockets. This allow
 Cirql provides an alternative API for sending queries in seperate HTTP requests. This is especially useful for situations like Server Side Rendering where credentials may differ per request.
 
 ```ts
-import { CirqlStateless, select } from 'cirql';
+import { LegacyCirqlStateless, select } from 'cirql';
 
-const cirql = new CirqlStateless({
+const cirql = new LegacyCirqlStateless({
     connection: {
         endpoint: 'http://localhost:8000/',
         namespace: 'test',
