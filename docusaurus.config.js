@@ -59,6 +59,7 @@ const config = {
 			navbar: {
 				logo: {
 					alt: 'Starlane Docs',
+					src: 'img/logo-black.svg',
 					className: 'navbar-logo',
 				},
 				items: [
