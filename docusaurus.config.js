@@ -1,14 +1,13 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+import { themes } from "prism-react-renderer";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-	title: 'Cirql',
-	tagline: 'SurrealDB ORM & Query Builder',
-	url: 'https://cirql.starlane.studio/',
+	title: 'Starlane Studios',
+	tagline: 'Documentation Platform',
+	url: 'https://docs.starlane.studio/',
 	baseUrl: '/',
 	onBrokenLinks: 'throw',
 	onBrokenMarkdownLinks: 'warn',
@@ -26,7 +25,7 @@ const config = {
 			({
 				blog: false,
 				docs: {
-					sidebarPath: require.resolve('./sidebars.js')
+					sidebarPath: require.resolve('./sidebars.js'),
 				},
 				theme: {
 					customCss: require.resolve('./src/css/custom.css')
@@ -35,33 +34,61 @@ const config = {
 		],
 	],
 
+	plugins: [
+		[
+			'@docusaurus/plugin-content-docs',
+			{
+				id: 'cirql',
+				path: 'cirql',
+				routeBasePath: 'cirql',
+			}
+		],
+		[
+			'@docusaurus/plugin-content-docs',
+			{
+				id: 'transaction-tracker',
+				path: 'transaction-tracker',
+				routeBasePath: 'transaction-tracker',
+			}
+		]
+	],
+
 	themeConfig:
 		/** @type {import('@docusaurus/preset-classic').ThemeConfig} */
 		({
 			navbar: {
 				logo: {
-					alt: 'Cirql ORM',
+					alt: 'Starlane Docs',
 					src: 'img/logo-wide.svg',
+					className: 'navbar-logo',
 				},
 				items: [
 					{
-						to: 'docs/guide',
-						label: 'Guide',
-						position: 'left'
+						href: "/",
+						label: "Home",
+						position: "left"
 					},
 					{
-						to: 'docs/api',
-						label: 'API Reference',
-						position: 'left',
-						activeBasePath: 'docs/api'
+						label: "Projects",
+						position: "left",
+						items: [
+							{
+								href: "/cirql/",
+								label: "Cirql",
+							},
+							// {
+							// 	href: "/transaction-tracker/",
+							// 	label: "Transaction Tracker",
+							// }
+						]
 					},
 					{
-						href: 'https://github.com/StarlaneStudios/cirql/blob/main/CHANGELOG.md',
-						label: 'Changelog',
+						href: 'https://github.com/StarlaneStudios/docs',
+						label: 'Contribute',
 						position: 'right',
 					},
 					{
-						href: 'https://github.com/StarlaneStudios/cirql',
+						href: 'https://github.com/StarlaneStudios',
 						label: 'GitHub',
 						position: 'right',
 					},
@@ -74,11 +101,11 @@ const config = {
 			},
 			footer: {
 				style: 'light',
-				copyright: `Copyright © ${new Date().getFullYear()} Starlane Studios`,
+				copyright: `Copyright © 2018-${new Date().getFullYear()} Starlane Studios`,
 			},
 			prism: {
-				theme: lightCodeTheme,
-				darkTheme: darkCodeTheme,
+				theme: themes.github,
+				darkTheme: themes.dracula,
 			},
 		}),
 };

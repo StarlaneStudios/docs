@@ -1,0 +1,55 @@
+/**
+ * CSS files with the .module.css suffix will be treated as CSS modules
+ * and scoped locally.
+ */
+
+.heroBanner {
+	padding: 4rem 0;
+	text-align: center;
+	position: relative;
+	overflow: hidden;
+}
+
+@media screen and (max-width: 996px) {
+	.heroBanner {
+		padding: 2rem;
+	}
+}
+
+.buttons {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 1rem;
+	gap: 1rem;
+}
+
+.tagline {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.logo {
+	width: 150px;
+	margin-inline: auto;
+	margin-bottom: 2rem;
+	display: block;
+}
+
+.card {
+	margin-top: 2.5rem;
+	max-width: 575px;
+	margin-inline: auto;
+	text-align: left;
+	padding: 1rem;
+	background-color: hsl(220, 35%, 97%);
+	border-radius: 1rem;
+}
+
+[data-theme='dark'] .card {
+	background-color: hsl(220, 8%, 22%);
+}
+
+[data-theme='dark'] .button--primary {
+	color: white !important;
+}

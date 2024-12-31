@@ -1,7 +1,10 @@
-/**
- * CSS files with the .module.css suffix will be treated as CSS modules
- * and scoped locally.
- */
+.buttons {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 1rem;
+	gap: 1rem;
+}
 
 .heroBanner {
 	padding: 4rem 0;
@@ -16,36 +19,21 @@
 	}
 }
 
-.buttons {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin-top: 1rem;
-	gap: 1rem;
-}
-
-.buttons * {
-	font-size: 1em !important;
+.tagline {
+	margin-top: 30px;
+	margin-bottom: 30px;
 }
 
 .logo {
-	max-width: 125px;
-}
-
-.card {
-	margin-top: 2.5rem;
-	max-width: 575px;
+	width: 420px;
 	margin-inline: auto;
-	text-align: left;
-	padding: 1rem;
-	background-color: hsl(220, 35%, 97%);
-	border-radius: 1rem;
+	display: block;
 }
 
-[data-theme='dark'] .card {
-	background-color: hsl(220, 8%, 22%);
+[data-theme='dark'] .logo {
+	content:url("/img/logo-white.svg");
 }
 
-[data-theme='dark'] .button--primary {
-	color: white !important;
+[data-theme='light'] .logo {
+	content:url("/img/logo-black.svg");
 }

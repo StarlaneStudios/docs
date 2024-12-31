@@ -1,8 +1,11 @@
-# Cirql documentation
+# Starlane Studios Documentation Platform
 
-This repository houses the documentation website source for [Cirql](https://github.com/StarlaneStudios/cirql), powered by [Docusaurus 2](https://docusaurus.io/).
+This repository houses the documentation website source for [Starlane Studios](https://starlane.studio/) projects, powered by [Docusaurus 2](https://docusaurus.io/).
 
-## Getting started
+## Getting started with contributing
+
+Maintaining documentation is hard, especially for a small team like ours. Contributions to our documentation are always welcome. If you see something that could be improved, please open an issue or submit a pull request.
+Please read the [Contributor Guide](CONTRIBUTING.md) before getting started.
 
 ### Installation
 
@@ -26,13 +29,8 @@ $ pnpm build
 
 This command generates static content into the `build` directory and can be served using any static contents hosting service.
 
-## Contributing
-
-Maintaining documentation is hard, especially for a small team like ours. Contributions to our documentation are always welcome. If you see something that could be improved, please open an issue or submit a pull request.
-
-This repository follows the same [Contributor Guide](https://github.com/StarlaneStudios/cirql/blob/main/CONTRIBUTING.md) as the main repository.
 
 ### Requirements
 - [PNPM](https://pnpm.io/) (npm i -g pnpm)
 
-Copyright (c) 2024, Starlane Studios
+Copyright (c) 2018-2025, Starlane Studios

@@ -2,24 +2,98 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #E649A3;
-  --ifm-color-primary-dark: #DA1E8A;
-  --ifm-color-primary-darker: #9F1665;
-  --ifm-color-primary-darkest: #5E0D3B;
-  --ifm-color-primary-light: #E962A2;
-  --ifm-color-primary-lighter: #EE86AD;
-  --ifm-color-primary-lightest: #F6ACB8;
-  --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+	--ifm-color-primary: #b449e6;
+	--ifm-color-primary-dark: #951eda;
+	--ifm-color-primary-darker: #74169f;
+	--ifm-color-primary-darkest: #3e0d5e;
+	--ifm-color-primary-light: #ac62e9;
+	--ifm-color-primary-lighter: #c886ee;
+	--ifm-color-primary-lightest: #dfacf6;
+	--ifm-code-font-size: 95%;
+	--docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 
-  font-family: Montserrat;
+	font-family: Montserrat;
 }
 
-[data-theme='dark'] {
-	--ifm-button-color: #ffffff;
+.hero__subtitle {
+	margin-top: 2rem;
+	margin-bottom: 4rem;
+	font-weight: 500;
 }
 
 .footer {
 	padding-block: 0.75rem;
 	filter: grayscale(100%);
+}
+
+.card {
+	margin-top: 2.5rem;
+	max-width: 575px;
+	margin-inline: auto;
+	text-align: left;
+	padding: 1rem;
+	background-color: hsl(220, 35%, 97%);
+	border-radius: 1rem;
+}
+
+[data-theme='dark'] .card {
+	background-color: hsl(220, 8%, 22%);
+}
+
+[data-theme='dark'] .button--primary {
+	color: white !important;
+}
+
+.project {
+	width: 200px;
+	height: 200px;
+	padding: 1rem;
+	border-radius: 1rem;
+	transition: background-color 0.3s;
+	font-weight: bold;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.project:hover {
+	background: linear-gradient(45deg, #e25bff, #347cf5);
+	text-decoration: none;
+}
+
+.project-icon {
+	width: 50px;
+	height: 50px;
+}
+.project:hover .project-icon {
+	filter: brightness(0) invert(1);
+}
+
+.project-name {
+	margin: 0%;
+	margin-top: 10px;
+	font-size: 20px;
+}
+
+.project:hover .project-name {
+	color: white;
+}
+
+[data-theme='dark'] .navbar-logo {
+	content:url("/img/logo-white.svg");
+}
+
+[data-theme='light'] .navbar-logo {
+	content:url("/img/logo-black.svg");
+}
+
+[data-theme='light'] .project {
+	background-color: hsl(233, 22%, 93%);
+	color: black;
+}
+
+[data-theme='dark'] .project {
+	background-color: hsl(220, 8%, 22%);
+	color: white;
 }
