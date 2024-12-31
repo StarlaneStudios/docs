@@ -17,7 +17,7 @@ function HomepageHeader() {
 				<div className={styles.buttons}>
 					<ProjectButton
 						name="Cirql"
-						icon="/img/logo.svg"
+						icon="/img/cirql/logo.svg"
 						link="/cirql"
 					/>
 				</div>
