@@ -25,4 +25,4 @@ While you can always disable zod by specifying `z.any()` for a query, the benefi
 
 ## Maintainers
 Cirql is built and maintained by <a href="https://starlane.studio/">Starlane Studios</a> at no cost.<br />
-If you would like to support our work feel free to [donate to us](https://paypal.me/ExodiusStudios) ⚡
+If you would like to support our work feel free to [donate to us](https://paypal.me/StarlaneStudios) ⚡

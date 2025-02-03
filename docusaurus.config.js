@@ -46,9 +46,9 @@ const config = {
 		[
 			'@docusaurus/plugin-content-docs',
 			{
-				id: 'transaction-tracker',
-				path: 'transaction-tracker',
-				routeBasePath: 'transaction-tracker',
+				id: 'transago',
+				path: 'transago',
+				routeBasePath: 'transago',
 			}
 		]
 	],
@@ -76,10 +76,10 @@ const config = {
 								href: "/cirql/",
 								label: "Cirql",
 							},
-							// {
-							// 	href: "/transaction-tracker/",
-							// 	label: "Transaction Tracker",
-							// }
+							{
+								href: "/transago/",
+								label: "Transago",
+							}
 						]
 					},
 					{

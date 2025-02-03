@@ -20,6 +20,11 @@ function HomepageHeader() {
 						icon="/img/cirql/logo.svg"
 						link="/cirql"
 					/>
+					<ProjectButton
+						name="Transago"
+						icon="/img/transago/logo.svg"
+						link="/transago"
+					/>
 				</div>
 			</div>
 		</header>

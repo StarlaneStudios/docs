@@ -1,0 +1,35 @@
+/**
+ * CSS files with the .module.css suffix will be treated as CSS modules
+ * and scoped locally.
+ */
+
+.heroBanner {
+	text-align: center;
+}
+
+.transagoLogo {
+	width: 350px;
+	margin-inline: auto;
+	margin-bottom: 3rem;
+	display: block;
+}
+
+.cookage {
+	width: 250px;
+}
+
+[data-theme='dark'] .card {
+	background-color: hsl(220, 8%, 22%);
+}
+
+[data-theme='dark'] .button--primary {
+	color: white !important;
+}
+
+[data-theme='dark'] .transagoLogo {
+	content:url("/img/transago/logo-white.svg");
+}
+
+[data-theme='light'] .transagoLogo {
+	content:url("/img/transago/logo-black.svg");
+}
